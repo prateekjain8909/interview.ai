@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  
+    /* Keep the logo to the left and center the navigation tabs */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the navigation tabs horizontally */
+    align-items: center; /* Vertically center the navigation tabs */
+    flex-grow: 1; /* Allow navigation tabs to take the available space */
+  }
+  
+
+  .nav-links a {
+    text-decoration: none;
+    color: #666666; /* Set your desired link color */
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9900; /* Set your desired link hover color */
+  }
+  
