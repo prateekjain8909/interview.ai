@@ -1,0 +1,49 @@
+.ImageCard {
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Prevent image overflow */
+  
+    /* Set maximum dimensions for the image */
+    max-width: 100%;
+    max-height: auto; /* Maintain the aspect ratio */
+  
+    /* Set the card's background color */
+    background-color: white;
+  }
+  
+  .ImageCard::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Create a 1:1 aspect ratio */
+  }
+  
+  .ImageCard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and crop the image */
+    border-radius: 10px; /* Apply border radius to the image */
+  }
+  
+  @media (max-width: 1024px) {
+    .ImageCard {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .ImageCard {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .ImageCard {
+      width: 20%;
+    }
+  }
+  

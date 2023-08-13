@@ -1,0 +1,37 @@
+/* ChatInput.css */
+/* ChatInput.css */
+.chat-input {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin-top: 20px;
+  bottom: 4rem;
+  left: 0; /* Stretch to the left edge of the screen */
+  right: 0; /* Stretch to the right edge of the screen */
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.input-field {
+  background-color: white;
+  width: 95%;
+  border: none;
+  outline: none; 
+}
+
+
+.send-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid lightgreen;
+}

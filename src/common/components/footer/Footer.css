@@ -1,0 +1,13 @@
+/* Footer.css */
+.footer-container {
+  background-color: white; /* Change the background color */
+  height: 100px; /* Increase the height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: darkgray;
+}

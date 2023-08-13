@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    margin: 2% 50px; /* 2% top and bottom margin, and 0% left and right margin */
+  
+  }
+  
+  @media (min-width: 768px) {
+    /* For screens with a width of 768px or more (tablet and larger) */
+    .card {
+      margin: 5% 0; /* 2% top and bottom margin, 20% left and right margin */
+    }
+  }
+  
+  .card > * {
+    flex: 1;
+    margin: 0 50px;
+  
+    /* Add padding between the two components */
+    padding: 10px;
+  
+    /* Apply responsive styles for mobile and tablet */
+    @media (max-width: 767px) {
+      margin: 0; /* No horizontal margin for mobile */
+      padding: 5px; /* Smaller padding for mobile */
+      margin: 0 0px;
+    }
+  }
+  

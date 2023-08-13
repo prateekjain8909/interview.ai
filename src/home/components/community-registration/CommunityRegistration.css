@@ -1,0 +1,43 @@
+/* CommunityRegistration.css */
+.community-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    /* margin: 20px; */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2px 10rem;
+    margin-top: 10rem;
+  }
+  
+  .card-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 10rem;
+  }
+  
+  .card-content {
+    font-size: 20px;
+    text-align: center;
+    margin: 2rem 20rem;
+  }
+  
+  .email-input {
+    width: 60%;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 2rem 0rem;
+    margin-left: 10rem;
+  }
+  
+  .get-started-button {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  

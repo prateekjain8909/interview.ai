@@ -1,0 +1,6 @@
+/* InterviewPage.css */
+.interview-page {
+  margin: 5rem 0; /* Apply side margins of 20% each */
+  background-color: white; /* Set background color */
+  min-height: 100vh; /* Ensure the page covers the full viewport height */
+}

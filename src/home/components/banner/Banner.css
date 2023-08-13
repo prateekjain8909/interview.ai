@@ -1,0 +1,17 @@
+/* BannerStyles.css */
+.banner-container {
+    background-color: lightgreen;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 0 20rem;
+    text-align: center;
+  }
+  

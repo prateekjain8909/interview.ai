@@ -1,0 +1,43 @@
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 5rem;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 1000;
+  letter-spacing: -.025em;
+  text-align: left; /* Align the title text to the left */
+  color: rgb(17, 24, 39);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  margin-bottom: 10px;
+}
+  
+  .card-description {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    text-align: center; /* Center-align the description */
+    font-weight: 200;
+    letter-spacing: .05em;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity))
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 767px) {
+    .card-title {
+      font-size: 32px;
+    }
+  
+    .card-description {
+      font-size: 14px;
+    }
+  }
+  
