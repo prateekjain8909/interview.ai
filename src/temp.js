@@ -1,11 +1,23 @@
-.chat-input {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #f1efef;
-    border: 1px solid #ccc;
-    border-radius: 6px 6px 0 0;
-  }
+import React, { useState } from 'react';
+import Chat from './Chat';
+import ChatInput from './ChatInput';
+
+function ChatSection() {
+  const [messages, setMessages] = useState([]);
+
+  const handleSendMessage = (message) => {
+    // Update the state to include the new message
+    setMessages([...messages, { user: 'user', message }]);
+  };
+
+  return (
+    <div className="chat-section">
+      {messages.map((message, index) => (
+        <Chat key={index} user={message.user} message={message.message} />
+      ))}
+      <ChatInput onSendMessage={handleSendMessage} />
+    </div>
+  );
+}
+
+export default ChatSection;

@@ -2,11 +2,12 @@ import React from 'react';
 import Chat from './chat/Chat'; // Import the Chat component
 import './ChatSection.css'; // Import the ChatSection.css file
 
-function ChatSection() {
+function ChatSection({messages}) {
   return (
     <div className="chat-section">
-    <Chat user="user" message="Hello, AI!" />
-    <Chat user="interviewer" message="Hi there! How can I help you today?" />
+      {messages.map((message, index) => (
+        <Chat user={message.user} message={message.message} />
+      ))}
     </div>
   );
 }
