@@ -8,10 +8,6 @@ function InterviewPage() {
   const initialMessages = [
     { user: "user", message: "You will take my technical interview on designing a URL shortener system. You need to ask me for my step-by-step approach to designing the URL shortener instead of providing the solution. Ask me to answer I thing at a time if you think my answer is correct then go to the next step" },
     { user: "interviewer", message: "Of course, I'd be happy to help you with your technical interview on designing a URL shortener system. Let's begin step by step:\nStep 1: Requirements Gathering\nCan you please explain what the main requirements are for your URL shortener system? This would involve understanding factors like expected user load, scalability needs, security considerations, and any specific features you have in mind." },
-    // { user: "user", message: "Hello, AI!" },
-    // { user: "interviewer", message: "Hi there! How can I help you today?" },
-    // { user: "user", message: "Hello, AI!" },
-    // { user: "interviewer", message: "Hi there! How can I help you today?" },
   ];
 
   const speech = new speakTts();
@@ -39,7 +35,7 @@ function InterviewPage() {
   
       const data = await response.json();
       console.log("data", data)
-      return data; // Extract the response message
+      return data.message; // Extract the response message
     } catch (error) {
       console.error('API request error:', error);
       return 'API request failed';
