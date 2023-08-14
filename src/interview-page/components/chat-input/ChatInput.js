@@ -16,17 +16,19 @@ function ChatInput({ onSendMessage }) {
   };
 
   return (
-    <div className="chat-input c1">
-      <input
-        type="text"
-        value={inputMessage}
-        onChange={handleInputChange}
-        placeholder="Send a message"
-        className="input-field"
-      />
-      <button className="send-button" onClick={handleSendClick}>
-      <div className="triangle"></div>
-      </button>
+    <div className='chat-input-bg'>
+      <div className="chat-input c1">
+        <input
+          type="text"
+          value={inputMessage}
+          onChange={handleInputChange}
+          placeholder="Send a message"
+          className="input-field"
+        />
+        <button className="send-button" onClick={handleSendClick}>
+        <div className="triangle"></div>
+        </button>
+      </div>
     </div>
   );
 }

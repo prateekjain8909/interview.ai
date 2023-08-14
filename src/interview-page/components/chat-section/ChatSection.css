@@ -1,6 +1,8 @@
 /* ChatSection.css */
 .chat-section {
-    background-color: white;
-    margin: 2rem 0;
-  }
-  
+  background-color: white;
+  margin: 2rem 0; /* Add space at the top and bottom */
+  padding-bottom: 4rem; /* Add padding at the bottom for chat input */
+  max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+  overflow-y: auto; /* Add vertical scroll when content exceeds max-height */
+}
